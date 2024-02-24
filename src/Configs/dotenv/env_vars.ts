@@ -9,3 +9,4 @@ export const DATABASE_HOST = process.env.DATABASE_HOST
 export const DATABASE_USERNAME = process.env.DATABASE_USERNAME
 export const CAR_SITE_FRONTEND_URL = process.env.CAR_SITE_FRONTEND_URL
 export const NOTIFICATION_API_DOMAIN= process.env.NOTIFICATION_API_DOMAIN
+export const NODE_ENV = process.env.NODE_ENV
