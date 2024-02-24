@@ -9,6 +9,7 @@ import expressFileUpload from "express-fileupload";
 import YAML from "yamljs";
 import { QueueListener } from "../../Utils/Queue/QueueListener";
 import ql from "../../Utils/Queue";
+import { NOTIFICATION_API_DOMAIN } from "../../Configs/dotenv/env_vars";
 // import { AppError } from "../../ErrorHandler/AppError";
 
 class HttpServer {
@@ -41,7 +42,7 @@ class HttpServer {
   // }
 
   listen() {
-    this.app.listen(5002, () => console.log("Listening to 5002"));
+    this.app.listen(5002, NOTIFICATION_API_DOMAIN, () => console.log("Listening to 5002"));
   }
 
   middlewares() {
