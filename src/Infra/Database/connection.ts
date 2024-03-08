@@ -15,8 +15,6 @@ const AppDataSource = new DataSource({
   logging: false,
   entities: [Notifications, UserNotifications],
   migrations: [`${__dirname}/**/Migrations/*.{ts,js}`],
-  ssl:{
-    rejectUnauthorized: false
-  }
+  ssl:false
 });
 export { AppDataSource };

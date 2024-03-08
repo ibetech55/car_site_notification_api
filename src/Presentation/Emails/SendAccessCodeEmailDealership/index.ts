@@ -21,6 +21,7 @@ class SendAccessCodeEmailDealership {
   }
 
   async exexute(values: EmailAccessCodeDealershipDto) {
+    console.log(CAR_SITE_FRONTEND_URL)
     await this._createNotificationUseCase.execute({
       data: JSON.stringify(values),
       type: values.type,
